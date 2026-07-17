@@ -1,0 +1,48 @@
+==========================================
+    MORA BULK ALIGHT MOTION PREMIUM
+         EMAIL GENERATOR RESULTS
+==========================================
+
+📊 ORDER SUMMARY:
+──────────────────────────────────────────
+• Requested: 5 account(s)
+• Success: 5 account(s)
+• Failed: 0 account(s)
+• Price per account: Rp 100
+• Total paid: Rp 500
+──────────────────────────────────────────
+
+📧 ACCOUNT DETAILS:
+──────────────────────────────────────────
+1. kentberdeen@fitbloomlab.com
+   Package: PRO_1_year
+   Duration: 1_year
+
+2. t3rmin4tor@sddrs-cdfs.shop
+   Package: PRO_1_year
+   Duration: 1_year
+
+3. skivies@merxo.me
+   Package: PRO_1_year
+   Duration: 1_year
+
+4. smplman01@fundproceed.com
+   Package: PRO_1_year
+   Duration: 1_year
+
+5. 1turner@datapinacle.com
+   Package: PRO_1_year
+   Duration: 1_year
+
+──────────────────────────────────────────
+
+🔑 HOW TO ACCESS:
+──────────────────────────────────────────
+Visit: generator.email/
+Example: generator.email/email@example.com
+
+Use any of the emails above to access premium features.
+
+📅 Generated on: 3/31/2026, 2:02:37 PM
+© Mora Bot
+==========================================

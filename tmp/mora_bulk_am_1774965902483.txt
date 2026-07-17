@@ -1,0 +1,36 @@
+==========================================
+    MORA BULK ALIGHT MOTION PREMIUM
+         EMAIL GENERATOR RESULTS
+==========================================
+
+📊 ORDER SUMMARY:
+──────────────────────────────────────────
+• Requested: 2 account(s)
+• Success: 2 account(s)
+• Failed: 0 account(s)
+• Price per account: Rp 100
+• Total paid: Rp 200
+──────────────────────────────────────────
+
+📧 ACCOUNT DETAILS:
+──────────────────────────────────────────
+1. lpm316@autoxugiare.com
+   Package: PRO_1_year
+   Duration: 1_year
+
+2. danspan01@kabinbilla.com
+   Package: PRO_1_year
+   Duration: 1_year
+
+──────────────────────────────────────────
+
+🔑 HOW TO ACCESS:
+──────────────────────────────────────────
+Visit: generator.email/
+Example: generator.email/email@example.com
+
+Use any of the emails above to access premium features.
+
+📅 Generated on: 3/31/2026, 2:05:02 PM
+© Mora Bot
+==========================================
