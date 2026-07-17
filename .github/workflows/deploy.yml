@@ -3,7 +3,7 @@ name: Deploy to Pterodactyl SFTP
 on:
   push:
     branches:
-      - main # Sesuaikan menjadi master jika branch Anda master
+      - main # Sesuaikan menjadi master jika branch utama Anda bernama master
 
 jobs:
   deploy:
@@ -14,12 +14,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: SFTP Deploy to Pterodactyl
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: '://ndserverku.lynzzofficial.com'          # ⚠️ GANTI dengan alamat IP / Host SFTP Pterodactyl Anda (tanpa sftp:// dan tanpa :2022)
-          port: 2022                        # ⚠️ Port default SFTP Pterodactyl biasanya 2022
           username: 'kuinzee.0263f22b'        # ⚠️ GANTI dengan Username SFTP dari panel Pterodactyl Anda
+          server: '://ndserverku.lynzzofficial.com:'          # ⚠️ GANTI dengan IP / Host SFTP Pterodactyl Anda (tanpa sftp:// dan tanpa :2022)
+          port: 2022                        # Port SFTP Pterodactyl
           password: ${{ secrets.PTERO_PASSWORD }}
-          protocol: sftp
-          local-dir: './'                   # Mengirim semua file dari GitHub
-          server-dir: '/'                   # Dimasukkan ke folder utama Pterodactyl
+          local_path: './*'                 # Mengambil semua file di repository
+          remote_path: '/'                  # Dimasukkan ke direktori utama server Pterodactyl
+          sftp_only: true
