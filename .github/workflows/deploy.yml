@@ -1,9 +1,9 @@
-name: Deploy to Pterodactyl
+name: Deploy to Pterodactyl SFTP
 
 on:
   push:
     branches:
-      - main # Sesuaikan ke master jika branch utama Anda bernama master
+      - main # Sesuaikan menjadi master jika branch Anda master
 
 jobs:
   deploy:
@@ -13,9 +13,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Pterodactyl Deploy
-        uses: Avenze/pterodactyl-actions@main
+      - name: SFTP Deploy to Pterodactyl
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          panel-url: 'https://serverku.lynzzofficial.com/server/0263f22b' # ⚠️ Ganti dengan URL panel Pterodactyl Anda
-          api-key: ${{ secrets.PTERODACTYL_API_KEY }}
-          server-id: ${{ secrets.PTERODACTYL_SERVER_ID }}
+          server: '://ndserverku.lynzzofficial.com'          # ⚠️ GANTI dengan alamat IP / Host SFTP Pterodactyl Anda (tanpa sftp:// dan tanpa :2022)
+          port: 2022                        # ⚠️ Port default SFTP Pterodactyl biasanya 2022
+          username: 'kuinzee.0263f22b'        # ⚠️ GANTI dengan Username SFTP dari panel Pterodactyl Anda
+          password: ${{ secrets.PTERO_PASSWORD }}
+          protocol: sftp
+          local-dir: './'                   # Mengirim semua file dari GitHub
+          server-dir: '/'                   # Dimasukkan ke folder utama Pterodactyl
