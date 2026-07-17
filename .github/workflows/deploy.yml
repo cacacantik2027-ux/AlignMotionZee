@@ -1,0 +1,21 @@
+name: Deploy to Pterodactyl
+
+on:
+  push:
+    branches:
+      - main # Ganti dengan nama branch utama Anda jika bukan main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Pterodactyl Deploy Action
+        uses: ptero-packages/deploy-action@v2
+        with:
+          panel-url: 'https://domainanda.com' # Ganti dengan URL panel Pterodactyl Anda
+          api-key: ${{ secrets.PTERODACTYL_API_KEY }}
+          server-id: ${{ secrets.PTERODACTYL_SERVER_ID }}
