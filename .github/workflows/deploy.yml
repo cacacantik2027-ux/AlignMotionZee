@@ -3,7 +3,7 @@ name: Deploy to Pterodactyl
 on:
   push:
     branches:
-      - main # Ganti dengan nama branch utama Anda jika bukan main
+      - main # Sesuaikan ke master jika branch Anda menggunakan nama master
 
 jobs:
   deploy:
@@ -13,9 +13,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Pterodactyl Deploy Action
-        uses: ptero-packages/deploy-action@v2
+      - name: Pterodactyl Deploy
+        uses: Avenze/pterodactyl-actions@v1.0.3
         with:
-          panel-url: 'https://serverku.lynzzofficial.com/server/0263f22b' # Ganti dengan URL panel Pterodactyl Anda
+          panel-url: 'https://serverku.lynzzofficial.com/server/0263f22b' # ⚠️ Ganti dengan URL panel Pterodactyl Anda
           api-key: ${{ secrets.PTERODACTYL_API_KEY }}
           server-id: ${{ secrets.PTERODACTYL_SERVER_ID }}
