@@ -17,7 +17,7 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: 'kuinzee.0263f22b'        # ⚠️ GANTI dengan Username SFTP dari panel Pterodactyl Anda
-          server: '://ndserverku.lynzzofficial.com'          # ⚠️ GANTI dengan IP / Host SFTP Pterodactyl Anda (tanpa sftp:// dan tanpa :2022)
+          server: 'ndserverku.lynzzofficial.com'          # ⚠️ GANTI dengan IP / Host SFTP Pterodactyl Anda (tanpa sftp:// dan tanpa :2022)
           port: 2022                        # Port SFTP Pterodactyl
           password: ${{ secrets.PTERO_PASSWORD }}
           local_path: './*'                 # Mengambil semua file di repository
