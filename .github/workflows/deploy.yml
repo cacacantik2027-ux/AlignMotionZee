@@ -16,6 +16,6 @@ jobs:
       - name: Pterodactyl Deploy Action
         uses: ptero-packages/deploy-action@v2
         with:
-          panel-url: 'https://domainanda.com' # Ganti dengan URL panel Pterodactyl Anda
+          panel-url: 'https://serverku.lynzzofficial.com/server/0263f22b' # Ganti dengan URL panel Pterodactyl Anda
           api-key: ${{ secrets.PTERODACTYL_API_KEY }}
           server-id: ${{ secrets.PTERODACTYL_SERVER_ID }}
