@@ -3,15 +3,15 @@ const chalk = require('chalk')
 
 
 
-global.namabot = "Floo Bot" // UBAH JADI NAMA LU
-global.namaowner = "Floo" // NAMA OWNER
-global.footer_text = "Floo" // NAMA BOT
+global.namabot = "AlightMotionKuin Bot" // UBAH JADI NAMA LU
+global.namaowner = "Kuin" // NAMA OWNER
+global.footer_text = "Alight Motion Premium" // NAMA BOT
 global.pp_bot = fs.readFileSync("./image/allmenubot.jpg")
-global.owner = ['6282395453692'] // UBAH NOMOR YANG MAU DI JADIKAN OWNER
-global.ownerTelegram = ['ISI_ID_TELEGRAM_OWNER']
-global.telegramToken = process.env.TELEGRAM_BOT_TOKEN || 'ISI_TOKEN_BOT_TELEGRAM'
-global.packname = 'Floo Bot' //sticker wm ubah
-global.author = 'Floo' //sticker wm ganti nama kalian
+global.owner = ['6285187255663'] // UBAH NOMOR YANG MAU DI JADIKAN OWNER
+global.ownerTelegram = ['8084747964']
+global.telegramToken = process.env.TELEGRAM_BOT_TOKEN || '8118707966:AAFbFxzG-_G43ZpvC8QS3ltnyT1mzbTH2Aw'
+global.packname = 'Kuin' //sticker wm ubah
+global.author = 'Kuin' //sticker wm ganti nama kalian
 
 // PENTING \\
 global.apiKeyAlightMotion = 'dlyyz-rest.apikey:f54be55c334bae30715cc2c15afb69cf'; // Your API key DLyyZ
